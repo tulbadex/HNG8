@@ -1,0 +1,15 @@
+{
+    "name": "user/hng",
+    "autoload": {
+        "psr-4": {
+            "User\\Hng\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tulbadex",
+            "email": "ibrahimadedayo@rocketmail.com"
+        }
+    ],
+    "require": {}
+}
