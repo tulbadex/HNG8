@@ -27,13 +27,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $message = $_POST['message'];
 
         if (!empty($name) && !empty($email) && !empty($subject) && !empty($message)) {
-            $header = "From:abc@somedomain.com \r\n";
-            $header .= "Cc:afgh@somedomain.com \r\n";
+            $header = "From:tulbadex@gmail.com \r\n";
             $header .= "MIME-Version: 1.0\r\n";
             $header .= "Content-type: text/html\r\n";
 
-            $send = mail ($email,$subject,$message,$header);
-            if ($send) {
+            mail ($email,$subject,$message,$header);
+            echo json_encode(array('msg' => 'success'));
+            die();
+            
+            if ($send == true) {
                 echo json_encode(array('msg' => 'success'));
                 die();
             }else{
