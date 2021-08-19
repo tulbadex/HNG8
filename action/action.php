@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $sendersEmail = "tulbadex@gmail.com";
             try {
                 //Server settings SMTP::DEBUG_SERVER
-                // $mail->SMTPDebug = SMTP::DEBUG_SERVER;     //Enable verbose debug output
+                $mail->SMTPDebug = SMTP::DEBUG_SERVER;     //Enable verbose debug output
                 $mail->isSMTP();                              //Send using SMTP
                 $mail->Host       = 'smtp.gmail.com';          //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                     //Enable SMTP authentication
@@ -41,13 +41,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $mail->Port       = 587;                      //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
                 $mail->SMTPSecure = 'tls';
         
-                $mail->SMTPOptions = array(
+                /* $mail->SMTPOptions = array(
                     'ssl' => array(
                         'verify_peer' => false,
                         'verify_peer_name' => false,
                         'allow_self_signed' => true
                     )
-                );
+                ); */
         
                 //Recipients
                 $senderEmail = $sendersEmail ? $sendersEmail : "info@nairaload.com";
