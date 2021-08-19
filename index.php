@@ -20,6 +20,12 @@
 <body>
     <div class="container">
         <div class="row">
+            <div class="col-md-12 d-flex">
+                <img src="img/hng.png" height="40" width="50" alt="" srcset="">
+                <img src="img/i4g.png" height="40" width="50" alt="" srcset="">
+                <img src="img/zuri.png" height="40" width="50" alt="" srcset="">
+            </div>
+
             <div class="col-md-12">
                 <h1>Resume</h1>
                 <h2 class="text-center">Adedayo Ibrahim</h2>
