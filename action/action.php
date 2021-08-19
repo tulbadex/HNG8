@@ -3,9 +3,12 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require_once __DIR__.'/../PHPMailer/src/Exception.php';
+/* require_once __DIR__.'/../PHPMailer/src/Exception.php';
 require_once __DIR__.'/../PHPMailer/src/PHPMailer.php';
-require_once __DIR__.'/../PHPMailer/src/SMTP.php';
+require_once __DIR__.'/../PHPMailer/src/SMTP.php'; */
+require_once '../PHPMailer/src/Exception.php';
+require_once '../PHPMailer/src/PHPMailer.php';
+require_once '../PHPMailer/src/SMTP.php';
 
 error_reporting(-1);
 header("Access-Control-Allow-Origin: *");
