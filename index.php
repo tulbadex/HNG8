@@ -152,7 +152,7 @@
                             success.classList.remove("text-danger");
                         }, 3000);
                     }
-                })
+                }).catch( err => console.log({ err }))
             }
         }
     </script>
