@@ -47,13 +47,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $mail->Port       = 587;                      //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
                 $mail->SMTPSecure = 'tls';
         
-                /* $mail->SMTPOptions = array(
+                $mail->SMTPOptions = array(
                     'ssl' => array(
                         'verify_peer' => false,
                         'verify_peer_name' => false,
                         'allow_self_signed' => true
                     )
-                ); */
+                );
         
                 //Recipients
                 $senderEmail = $sendersEmail ? $sendersEmail : "ibrahimadedayo@rocketmail.com";
