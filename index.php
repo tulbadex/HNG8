@@ -121,9 +121,9 @@
 		<section id="about" class="about">
 			<div class="head">
 				<ul>
-					<li><img src="img/hng.png" width="30" height="30" alt="" srcset=""></li>
-					<li><img src="img/i4g.png" width="30" height="30" alt="" srcset=""></li>
-					<li><img src="img/zuri.png" width="30" height="30" alt="" srcset=""></li>
+					<li><img src="img/hng.png" class="img-responsive" width="30" height="30" alt="" srcset=""></li>
+					<li><img src="img/i4g.png" class="img-responsive" width="30" height="30" alt="" srcset=""></li>
+					<li><img src="img/zuri.png" class="img-responsive" width="30" height="30" alt="" srcset=""></li>
 				</ul>
 			</div>
 
