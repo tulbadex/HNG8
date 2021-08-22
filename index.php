@@ -6,7 +6,7 @@
 	<title>Bootstrap Portfolio - Personal vCard & Resume Template</title>
 	<meta name="description" content="Blvck - Personal vCard & Resume Template">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"> -->
 
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
