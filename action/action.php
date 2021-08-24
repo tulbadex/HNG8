@@ -27,11 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $message = $_POST['message'];
 
         if (!empty($name) && !empty($email) && !empty($subject) && !empty($message)) {
-           /*  $data = array(
+            $data = array(
                 "msg" => "success"
             );
             echo json_encode($data, true);
-            die(); */
+            die();
             
             $mail = new PHPMailer(true);
             $sendersEmail = "tulbadex@gmail.com";
