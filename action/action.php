@@ -27,18 +27,18 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $message = $_POST['message'];
 
         if (!empty($name) && !empty($email) && !empty($subject) && !empty($message)) {
-            $data = array(
+           /*  $data = array(
                 "msg" => "success"
             );
             echo json_encode($data, true);
-            die();
+            die(); */
             
             $mail = new PHPMailer(true);
             $sendersEmail = "tulbadex@gmail.com";
         
             try {
                 //Server settings SMTP::DEBUG_SERVER
-                $mail->SMTPDebug = SMTP::DEBUG_SERVER;     //Enable verbose debug output
+                $mail->SMTPDebug = 0;     //Enable verbose debug output
                 $mail->isSMTP();                              //Send using SMTP
                 $mail->Host       = 'smtp.gmail.com';          //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                     //Enable SMTP authentication
